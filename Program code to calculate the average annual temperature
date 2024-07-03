@@ -1,0 +1,18 @@
+def calculate_average_temperature(temperatures):
+    """
+    Calculates the average annual temperature given a list of monthly temperatures.
+    
+    Args:
+        temperatures (list): A list of 12 monthly temperatures.
+        
+    Returns:
+        float: The average annual temperature.
+    """
+    total_temperature = sum(temperatures)
+    average_temperature = total_temperature / len(temperatures)
+    return average_temperature
+
+# Example usage
+monthly_temperatures = [20.5, 22.3, 24.1, 26.0, 28.2, 30.1, 32.0, 31.5, 29.8, 27.2, 24.6, 21.9]
+result = calculate_average_temperature(monthly_temperatures)
+print(f"The average annual temperature is {result:.2f}")
